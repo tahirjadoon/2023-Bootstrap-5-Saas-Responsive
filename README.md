@@ -3,7 +3,7 @@
 ## Project Template ##
 Each section has its own repo which is then merged into main. At the end main will have all the code. 
 
-## Project Content? ##
+## Project content? ##
 * Use Bootstrap 5 from scratch with 13 projects
 * Create amazing high quality Bootstrap 5 themes and UIs from scratch
 * Bootstrap 5 utilities, classes, components & JS widgets using a custom sandbox environment
