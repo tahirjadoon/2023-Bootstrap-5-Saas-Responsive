@@ -3,8 +3,21 @@
 ## Project Template ##
 Each section has its own repo which is then merged into main. At the end main will have all the code. 
 
-## What is covered? ##
+## Project Content? ##
 * Use Bootstrap 5 from scratch with 13 projects
+* Create amazing high quality Bootstrap 5 themes and UIs from scratch
+* Bootstrap 5 utilities, classes, components & JS widgets using a custom sandbox environment
+* Semantic HTML5 & modern CSS3 techniques
+* Design and develop your own Bootstrap 5 Templates from scratch
+* Use the latest HTML5 and CSS3 to add unique styling to Bootstrap
+* Bootstrap Grid System with the theme layout
+* Fine tune HTML and CSS skills for responsive website development
+* Work with responsive images and icons
+* Create forms and to choose great fonts for your website.
+* Build 13 Bootstrap 5 amazing templates
+* Use Bootstrap 5 HTML5
+* Use Bootstrap 5 CSS3
+* Use Bootstrap 5 JavaScript
 
 ## Projects created ##
 1. A numbered list
