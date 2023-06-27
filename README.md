@@ -30,7 +30,7 @@ Each section has its own repo which is then merged into main. At the end main wi
 8. Portfolio (Professional level with Bootstrap 5)
 9. Bicycle (Professional level with Bootstrap 5)
 10. Selling online themes (Professional level with Bootstrap 5)
-11. Fiction (Sass level with Bootstrap 5
+11. Fiction (Sass level with Bootstrap 5)
 12. Cars (Sass level with Bootstrap 5)
 13. E-commerce (Sass level with Bootstrap 5)
 14. Charts (Sass level with Bootstrap 5)
