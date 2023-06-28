@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstarp Basics - Layout - Breakpoints</title>
+
+    <link rel="stylesheet" href="css/layout-breakpoint.css">
+</head>
+
+<body>
+    <h1>Layout - Breakpoints</h1>
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/layout/breakpoints/" target="_blank">Breakpoints</a></li>
+    </ul>
+
+    <h2>Breakpoints</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Breakpoint</th>
+                <th>Class infix</th>
+                <th>Dimensions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>X-Small</td>
+                <td><em>None</em></td>
+                <td>&lt;576px <code>[0 to 575.98px]</code></td>
+            </tr>
+            <tr>
+                <td>Small</td>
+                <td><code>sm</code></td>
+                <td>≥576px <code>[576px to 767.98px]</code></td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td><code>md</code></td>
+                <td>≥768px <code>[768px to 991.98px]</code></td>
+            </tr>
+            <tr>
+                <td>Large</td>
+                <td><code>lg</code></td>
+                <td>≥992px <code>[992px to 1199.98px]</code></td>
+            </tr>
+            <tr>
+                <td>Extra large</td>
+                <td><code>xl</code></td>
+                <td>≥1200px <code>[1200px to 1399.98]</code></td>
+            </tr>
+            <tr>
+                <td>Extra extra large</td>
+                <td><code>xxl</code></td>
+                <td>≥1400px</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <p>Css for below items: <a href="css/layout-breakpoint.css"
+            target="_blank">feature/002BootstrapBasics/css/layout-breakpoint.css</a></p>
+
+    <h2>Example</h2>
+    <p>Drag the screen to view different colors in action</p>
+    <div class="responsive">
+        <h1 class="header">
+            Header 1 for response design
+        </h1>
+    </div>
+
+    <h2>Css for above example</h2>
+    <div class="ms-2 mb-2">
+
+        /* DEFAULT: keep it before others, greater than x-large -- covering xx-large */<br>
+        .responsive{background-color: lightblue;}<br>
+        .header {background-color: gray; color: lightpink;}<br><br>
+
+        /* upto x-small */<br>
+        @media only screen and (max-width: 575.98px){<br>
+        &emsp;.responsive {background-color: blue;}<br>
+        &emsp;.header {background-color: black; color: red;}<br>
+        }<br><br>
+
+        /* greater than x-small but upto small */<br>
+        @media only screen and (min-width: 556px) and (max-width: 767.98px){<br>
+        &emsp;.responsive {background-color: bisque;}<br>
+        &emsp;.header {background-color: brown; color: white;}<br>
+        }<br><br>
+
+        /* greater than small but upto medium */<br>
+        @media only screen and (min-width: 768px) and (max-width: 991.98px){<br>
+        &emsp;.responsive {background-color: violet;}<br>
+        &emsp;.header {background-color: tomato; color: yellowgreen;}<br>
+        }<br><br>
+
+        /* greater than medium but upto large */<br>
+        @media only screen and (min-width: 992px) and (max-width: 1199.98px){<br>
+        &emsp;.responsive {background-color: saddlebrown;}<br>
+        &emsp;.header {background-color: violet; color: blueviolet;}<br>
+        }<br><br>
+
+        /* greater than large but upto x-large */<br>
+        @media only screen and (min-width: 1200px) and (max-width: 1399.98px){<br>
+        &emsp;.responsive {background-color: red;}<br>
+        &emsp;.header {background-color: tan; color: teal;}<br>
+        }
+
+    </div>
+
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/*
+x-small: 0 to 575.98px
+small: 576px to 767.98px
+medium: 768px to 991.98px
+large: 992px to 1199.98px
+x-large: 1200px to 1399.98
+*/
+
+/* DEFAULT: keep it before others, greater than x-large -- covering xx-large  */
+.responsive{background-color: lightblue;}
+.header {background-color: gray; color: lightpink;}
+
+/* upto x-small  */
+@media only screen and (max-width: 575.98px){
+    .responsive {background-color: blue;}
+    .header {background-color: black; color: red;}
+}
+
+/* greater than x-small but upto small  */
+@media only screen and (min-width: 556px) and (max-width: 767.98px){
+    .responsive {background-color: bisque;}
+    .header {background-color: brown; color: white;}
+}
+
+/* greater than small but upto medium  */
+@media only screen and (min-width: 768px) and (max-width: 991.98px){
+    .responsive {background-color: violet;}
+    .header {background-color: tomato; color: yellowgreen;}
+}
+
+/* greater than medium but upto large  */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px){
+    .responsive {background-color: saddlebrown;}
+    .header {background-color: violet; color: blueviolet;}
+}
+
+/* greater than large but upto x-large  */
+@media only screen and (min-width: 1200px) and (max-width: 1399.98px){
+    .responsive {background-color: red;}
+    .header {background-color: tan; color: teal;}
+}
+
