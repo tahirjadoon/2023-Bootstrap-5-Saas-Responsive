@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstarp Basics - CSS Variables</title>
+
+</head>
+
+<body>
+    <h1>002 Bootstarp Basics - CSS Variables</h1>
+
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/customize/css-variables/" target="_blank">CSS Variables</a></li>
+    </ul>
+
+    <p>Custom properties (sometimes referred to as <b>CSS variables</b> or <b>cascading variables</b>) are entities
+        defined by CSS authors that contain specific values to be reused throughout a document. They are set using
+        custom property notation
+        <span class="bg-secondary">(e.g., --main-color: black;)</span> and are accessed using the
+        <span class="bg-secondary">var()</span> function <span class="bg-secondary">(e.g., color:
+            var(--main-color);)</span>.
+    </p>
+
+    <h2>Root Variables</h2>
+    <p>
+    <div class="bg-light">
+        &ensp;:root {<br>
+        &emsp;--bs-blue: #0d6efd;<br>
+        &emsp;--bs-indigo: #6610f2;<br>
+        &emsp;--bs-purple: #6f42c1;<br>
+        &emsp;--bs-pink: #d63384;<br>
+        &emsp;--bs-red: #dc3545;<br>
+        &emsp;--bs-orange: #fd7e14;<br>
+        &emsp;--bs-yellow: #ffc107;<br>
+        &emsp;--bs-green: #198754;<br>
+        &emsp;--bs-teal: #20c997;<br>
+        &emsp;--bs-cyan: #0dcaf0;<br>
+        &emsp;--bs-white: #fff;<br>
+        &emsp;--bs-gray: #6c757d;<br>
+        &emsp;--bs-gray-dark: #343a40; <span class="text-danger">Same as --bs-gray-800</span><br>
+        &emsp;--bs-gray-100: #f8f9fa;<br>
+        &emsp;--bs-gray-200: #e9ecef;<br>
+        &emsp;--bs-gray-300: #dee2e6;<br>
+        &emsp;--bs-gray-400: #ced4da;<br>
+        &emsp;--bs-gray-500: #adb5bd;<br>
+        &emsp;--bs-gray-600: #6c757d;<br>
+        &emsp;--bs-gray-700: #495057;<br>
+        &emsp;--bs-gray-800: #343a40; <span class="text-danger">Same as --bs-gray-dark</span><br>
+        &emsp;--bs-gray-900: #212529;<br>
+        &emsp;--bs-primary: #0d6efd;<br>
+        &emsp;--bs-secondary: #6c757d;<br>
+        &emsp;--bs-success: #198754;<br>
+        &emsp;--bs-info: #0dcaf0;<br>
+        &emsp;--bs-warning: #ffc107;<br>
+        &emsp;--bs-danger: #dc3545;<br>
+        &emsp;--bs-light: #f8f9fa;<br>
+        &emsp;--bs-dark: #212529;<br>
+        &emsp;--bs-primary-rgb: 13, 110, 253;<br>
+        &emsp;--bs-secondary-rgb: 108, 117, 125;<br>
+        &emsp;--bs-success-rgb: 25, 135, 84;<br>
+        &emsp;--bs-info-rgb: 13, 202, 240;<br>
+        &emsp;--bs-warning-rgb: 255, 193, 7;<br>
+        &emsp;--bs-danger-rgb: 220, 53, 69;<br>
+        &emsp;--bs-light-rgb: 248, 249, 250;<br>
+        &emsp;--bs-dark-rgb: 33, 37, 41;<br>
+        &emsp;--bs-white-rgb: 255, 255, 255;<br>
+        &emsp;--bs-black-rgb: 0, 0, 0;<br>
+        &emsp;--bs-body-color-rgb: 33, 37, 41;<br>
+        &emsp;--bs-body-bg-rgb: 255, 255, 255;<br>
+        &emsp;--bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+        "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";<br>
+        &emsp;--bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+        monospace;<br>
+        &emsp;--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));<br>
+        &emsp;--bs-body-font-family: var(--bs-font-sans-serif);<br>
+        &emsp;--bs-body-font-size: 1rem;<br>
+        &emsp;--bs-body-font-weight: 400;<br>
+        &emsp;--bs-body-line-height: 1.5;<br>
+        &emsp;--bs-body-color: #212529;<br>
+        &emsp;--bs-body-bg: #fff;<br>
+        &ensp;}
+    </div>
+    </p>
+
+    <h2>Basic usage 1</h2>
+    <p>
+        &ensp;element {<br>
+        &emsp;--main-bg-color: brown;<br>
+        &ensp;}
+    </p>
+
+    <h2>Basic usage 2</h2>
+    <p>
+        &ensp;:root {<br>
+        &emsp;--main-bg-color: brown;<br>
+        &ensp; }<br><br>
+        &ensp;element {<br>
+        &emsp;background-color: var(--main-bg-color);<br>
+        &ensp;}
+
+    </p>
+
+    <h2>Primary Example</h2>
+    <div style="color: var(--bs-blue);">div: style="color: var(--bs-blue);</div>
+    <div style="color: var(--bs-primary);">div: style="color: var(--bs-primary);</div>
+    <div style="color: rgb(var(--bs-primary-rgb));">div: style="color: rgb(var(--bs-primary-rgb));"</div>
+
+    <h2>Gray Dark Example</h2>
+    <div style="color: var(--bs-gray-dark);">div: style="color: var(--bs-gray-dark);</div>
+    <div style="color: var(--bs-gray-800);">div: style="color: var(--bs-gray-800);</div>
+
+    <h2>Fonts</h2>
+    <div style="font-family: var(--bs-font-sans-serif);">div: style="font-family: var(--bs-font-sans-serif);"</div>
+    <div style="font-family: var(--bs-body-font-family);">div: style="font-family: var(--bs-body-font-family);" Here
+        SansSerif</div>
+    <div style="font-family: var(--bs-font-monospace);">div: style="font-family: var(--bs-font-monospace);"</div>
+
+    <h2>Font Size/Weight/LineHeight</h2>
+    <div style="font-size: var(--bs-body-font-size);">div: style="font-size: var(--bs-body-font-size);" Here 1.5rem
+    </div>
+    <div style="font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight);">div: font-size:
+        var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); Here 1.5rem
+    </div>
+    <p style="line-height: var(--bs-body-line-height);">p: style="line-height: var(--bs-body-line-height);" Here 1.5</p>
+
+    <h2>Gradient</h2>
+    <div style="background-image: var(--bs-gradient);" class="bg-danger">div: style="background-image:
+        var(--bs-gradient);" class="bg-danger"</div>
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
