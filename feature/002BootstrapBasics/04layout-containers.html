@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstarp Basics - Layout - Containers</title>
+
+</head>
+
+<body>
+    <h1>Layout - Containers</h1>
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/layout/containers/" target="_blank">Containers</a></li>
+    </ul>
+
+    <p>Bootstrap comes with three different containers:</p>
+    <ul>
+        <li><code>.container:</code> which sets a <strong>max-width</strong> at each responsive breakpoint</li>
+        <li><code>.container-fluid:</code> which is <strong>width: 100%</strong> at all breakpoints</li>
+        <li><code>.container-{breakpoint}:</code> which is <strong>width: 100%</strong> until the specified breakpoint
+        </li>
+    </ul>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <td class="border-dark"></td>
+                <th scope="col">
+                    Extra small<br>
+                    <span class="fw-normal">&lt;576px</span>
+                </th>
+                <th scope="col">
+                    Small<br>
+                    <span class="fw-normal">≥576px</span>
+                </th>
+                <th scope="col">
+                    Medium<br>
+                    <span class="fw-normal">≥768px</span>
+                </th>
+                <th scope="col">
+                    Large<br>
+                    <span class="fw-normal">≥992px</span>
+                </th>
+                <th scope="col">
+                    X-Large<br>
+                    <span class="fw-normal">≥1200px</span>
+                </th>
+                <th scope="col">
+                    XX-Large<br>
+                    <span class="fw-normal">≥1400px</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" class="fw-normal"><code>.container</code></th>
+                <td class="text-muted">100%</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th scope="row" class="fw-normal"><code>.container-sm</code></th>
+                <td class="text-muted">100%</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th scope="row" class="fw-normal"><code>.container-md</code></th>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th scope="row" class="fw-normal"><code>.container-lg</code></th>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th scope="row" class="fw-normal"><code>.container-xl</code></th>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th scope="row" class="fw-normal"><code>.container-xxl</code></th>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th scope="row" class="fw-normal"><code>.container-fluid</code></th>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+                <td class="text-muted">100%</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+
+    <h2>Div with widths to show px</h2>
+    <div class="mb-2 ">
+        <div style="width: 540px;" class="bg-primary">width: 540px;</div>
+        <div style="width: 576px;" class="bg-secondary">width: 576px;</div>
+        <div style="width: 720px;" class="bg-success">width: 720px;</div>
+        <div style="width: 768px;" class="bg-warning">width: 768px;</div>
+        <div style="width: 960px;" class="bg-danger">width: 960px;</div>
+        <div style="width: 992px;" class="bg-info">width: 992px;</div>
+        <div style="width: 1140px;" class="bg-primary">width: 1140px;</div>
+        <div style="width: 1200px;" class="bg-secondary">width: 1200px;</div>
+        <div style="width: 1320px;" class="bg-success">width: 1320px;</div>
+        <div style="width: 1400px;" class="bg-warning">width: 1400px;</div>
+    </div>
+
+    <h2>Default Container</h2>
+    <div class="mb-2">
+        <div class="container bg-info">
+            class "container" applied to the div<br>
+            container and container-sm has the same affect
+        </div>
+    </div>
+
+
+    <h2>Responsive Containers <br>
+        [Inner: <span class="screenInnerWidth"></span> Outer: <span class="screenOuterWidth"></span>]</h2>
+    <div class="mb-2">
+        <div class="container-sm bg-info">100% wide until small breakpoint.<br>
+            class "container-sm" applied to the div<br>
+            occupies 100% of the screen when the width of the screen is smaller than 576px<br>
+            container and container-sm has the same affect</div>
+        <div class="container-md bg-primary">100% wide until medium breakpoint.<br>
+            class "container-md" applied to the div<br>
+            occupies 100% of the screen when the width of the screen is smaller than 768px</div>
+        <div class="container-lg bg-secondary">100% wide until large breakpoint.<br>
+            class "container-lg" applied to the div<br>
+            occupies 100% of the screen when the width of the screen is smaller than 992px</div>
+        <div class="container-xl bg-danger">100% wide until extra large breakpoint.<br>
+            class "container-xl" applied to the div<br>
+            occupies 100% of the screen when the width of the screen is smaller than 1200px</div>
+        <div class="container-xxl bg-warning">100% wide until extra extra large breakpoint.<br>
+            class "container-xxl" applied to the div<br>
+            occupies 100% of the screen when the width of the screen is smaller than 1400px</div>
+        <div class="container-fluid bg-info">100% wide<br>
+            class "container-fluid" applied to the div<br>
+            occupies 100% of the screen</div>
+    </div>
+
+    <script>
+        const screenInnerWidth = document.getElementsByClassName("screenInnerWidth");
+        const screenOuterWidth = document.getElementsByClassName("screenOuterWidth");
+        showScreenSize();
+
+        //on window resize call the showScreenSize function
+        onresize = showScreenSize;
+
+        function showScreenSize() {
+            const innerWidth = window.innerWidth;
+            const outerWidth = window.outerWidth;
+            for (let i = 0; i < screenInnerWidth.length; i++) {
+                screenInnerWidth[i].innerHTML = `${innerWidth}px`;
+            }
+            for (let i = 0; i < screenOuterWidth.length; i++) {
+                screenOuterWidth[i].innerHTML = `${outerWidth}px`;
+            }
+        };
+    </script>
+
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
