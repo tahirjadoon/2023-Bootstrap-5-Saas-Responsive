@@ -17,7 +17,7 @@ x-large: 1200px to 1399.98
 }
 
 /* greater than x-small but upto small  */
-@media only screen and (min-width: 556px) and (max-width: 767.98px){
+@media only screen and (min-width: 576px) and (max-width: 767.98px){
     .responsive {background-color: bisque;}
     .header {background-color: brown; color: white;}
 }
