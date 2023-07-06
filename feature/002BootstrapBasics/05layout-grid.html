@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstarp Basics - Layout - Grid</title>
+
+</head>
+
+<body>
+    <h1>Layout - Grid</h1>
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/layout/grid/" target="_blank">Grid</a></li>
+    </ul>
+
+    <h2>Grid options</h2>
+    <p>Bootstrap’s grid system can adapt across all six default breakpoints, and any breakpoints you customize. The six
+        default grid tiers are as follow:</p>
+    <ul>
+        <li>Extra small (xs)</li>
+        <li>Small (sm)</li>
+        <li>Medium (md)</li>
+        <li>Large (lg)</li>
+        <li>Extra large (xl)</li>
+        <li>Extra extra large (xxl)</li>
+    </ul>
+    <p>As noted above, each of these breakpoints have their own container, unique class prefix, and modifiers. Here’s
+        how
+        the grid changes across these breakpoints:</p>
+    <table class="table mb-4">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">
+                    xs<br>
+                    <span class="fw-normal">&lt;576px</span>
+                </th>
+                <th scope="col">
+                    sm<br>
+                    <span class="fw-normal">≥576px</span>
+                </th>
+                <th scope="col">
+                    md<br>
+                    <span class="fw-normal">≥768px</span>
+                </th>
+                <th scope="col">
+                    lg<br>
+                    <span class="fw-normal">≥992px</span>
+                </th>
+                <th scope="col">
+                    xl<br>
+                    <span class="fw-normal">≥1200px</span>
+                </th>
+                <th scope="col">
+                    xxl<br>
+                    <span class="fw-normal">≥1400px</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="text-nowrap" scope="row">Container <code class="fw-normal">max-width</code></th>
+                <td>None (auto)</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Class prefix</th>
+                <td><code>.col-</code></td>
+                <td><code>.col-sm-</code></td>
+                <td><code>.col-md-</code></td>
+                <td><code>.col-lg-</code></td>
+                <td><code>.col-xl-</code></td>
+                <td><code>.col-xxl-</code></td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row"># of columns</th>
+                <td colspan="6">12</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Gutter width</th>
+                <td colspan="6">1.5rem (.75rem on left and right)</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Custom gutters</th>
+                <td colspan="6">Yes</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Nestable</th>
+                <td colspan="6">Yes</td>
+            </tr>
+            <tr>
+                <th class="text-nowrap" scope="row">Column ordering</th>
+                <td colspan="6">Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Single column</h2>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col bg-danger">Col 1 class="col" takes full width</div>
+        </div>
+    </div>
+
+    <h2>Two columns</h2>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col bg-danger">Col 1 class="col" takes 50% width</div>
+            <div class="col bg-success">Col 2 class="col" takes 50% width</div>
+        </div>
+    </div>
+
+    <h2>Tweleve columns</h2>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col bg-danger">Col 1 class="col"</div>
+            <div class="col bg-success">Col 2 class="col"</div>
+            <div class="col bg-info">Col 3 class="col"</div>
+            <div class="col bg-warning">Col 4 class="col"</div>
+            <div class="col bg-primary">Col 5 class="col"</div>
+            <div class="col bg-secondary">Col 6 class="col"</div>
+            <div class="col bg-danger">Col 7 class="col"</div>
+            <div class="col bg-success">Col 8 class="col"</div>
+            <div class="col bg-info">Col 9 class="col"</div>
+            <div class="col bg-warning">Col 10 class="col"</div>
+            <div class="col bg-primary">Col 11 class="col"</div>
+            <div class="col bg-secondary">Col 12 class="col"</div>
+        </div>
+    </div>
+
+    <h2>Column width</h2>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col bg-danger">Col 1 class="col" will take 3 columns width</div>
+            <div class="col-6 bg-success">Col 1 class="col-6" will take 6 columns width</div>
+            <div class="col bg-primary">Col 2 class="col" will take 3 columns width</div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-info">Col 1 class="col-2" will take 2 columns width</div>
+            <div class="col-8 bg-warning">Col 1 class="col-8" will take 8 columns width</div>
+        </div>
+    </div>
+
+    <h2>With Image</h2>
+    <p>Image has been assigned class img-fluid</p>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col">Col 1 class="col" will take 50% columns width</div>
+            <div class="col">
+                <img src="images/hero-img.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <h2>Responsive Grid</h2>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col col-md-8 bg-danger">Col 1 class="col col-md-8" medium and above it will occupy 8 columns,
+                other 100%</div>
+        </div>
+    </div>
+
+    <h2>Stacked to Horizontal & Vertical</h2>
+    <p>Below the specified col-?? the three volumns will stacked vertical. Otherwise there will be horizontal </p>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col-md bg-danger">One class="col-md"</div>
+            <div class="col-md-6 bg-primary">Two class="col-md-6"</div>
+            <div class="col-md bg-success">Three class="col-md"</div>
+        </div>
+    </div>
+
+    <h2>Row Columns</h2>
+    <p>Control number of columns inside a row</p>
+    <div class="container mb-2">
+        <div class="row row-cols-3">
+            <div class="col bg-danger">One class="col"</div>
+            <div class="col bg-primary">Two class="col"</div>
+            <div class="col bg-success">Three class="col"</div>
+            <div class="col bg-info">Four class="col" This will go on second row since row has row-cols-3 class
+                applied</div>
+        </div>
+    </div>
+
+    <h2>Row Columns Response</h2>
+    <p>Control number of columns inside a row. When >= md then 3 columns. Row has class row-cols-md-3</p>
+    <div class="container mb-2">
+        <div class="row row-cols-md-3">
+            <div class="col bg-danger">One class="col"</div>
+            <div class="col bg-primary">Two class="col"</div>
+            <div class="col bg-success">Three class="col"</div>
+            <div class="col bg-info">Four class="col" This will go on second row since row has row-cols-3 class
+                applied</div>
+        </div>
+    </div>
+
+    <h2>Row Columns Auto</h2>
+    <p>Control columns width per the content. Row has class row-cols-auto</p>
+    <div class="container mb-2">
+        <div class="row row-cols-auto">
+            <div class="col bg-danger">One class="col"</div>
+            <div class="col bg-primary">Two class="col"</div>
+            <div class="col bg-success">Three class="col"</div>
+            <div class="col bg-info">Four class="col"</div>
+        </div>
+    </div>
+
+    <h2>Row Columns Auto and Response</h2>
+    <p>Control columns width per the content when >= xl. Row has class row-cols-xl-auto</p>
+    <div class="container mb-2">
+        <div class="row row-cols-xl-auto">
+            <div class="col bg-danger">One class="col"</div>
+            <div class="col bg-primary">Two class="col"</div>
+            <div class="col bg-success">Three class="col"</div>
+            <div class="col bg-info">Four class="col"</div>
+        </div>
+    </div>
+
+    <h2>Nesting Method (rows)</h2>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col-md-4"><img src="images/hero-img.png" class="img-fluid"></div>
+            <div class="col-md-8 text-center bg-success">
+                <h3>Row 1 Column 2 has nested row</h3>
+                <div class="row">
+                    <div class="col-sm-6 bg-warning">Row 2 col 1 col-sm-6</div>
+                    <div class="col-sm-6 bg-info">Row 2 col 2 col-sm-6</div>
+                    <div class="col-sm-6 bg-primary">Row 2 col 3 col-sm-6</div>
+                    <div class="col-sm-6 bg-secondary">Row 2 col 4 col-sm-6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
