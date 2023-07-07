@@ -21,7 +21,152 @@
         <li><a href="https://getbootstrap.com/docs/5.1/layout/columns/" target="_blank">Columns</a></li>
     </ul>
 
-    <h2></h2>
+    <h2>Vertical Alignment: align-items-center on row</h2>
+    <div class="container">
+        <div class="row align-items-center bg-danger" style="height: 100px;">
+            <div class="col-4 bg-info">Column 1: Row has class="row align-items-center bg-danger" </div>
+            <div class="col-4 bg-success">Column 2: </div>
+            <div class="col-4 bg-primary">Column 3: </div>
+        </div>
+    </div>
+
+    <h2>Vertical Alignment: align-items-start on row</h2>
+    <div class="container">
+        <div class="row align-items-start bg-danger" style="height: 100px;">
+            <div class="col-4 bg-info">Column 1: Row has class="row align-items-start bg-danger" </div>
+            <div class="col-4 bg-success">Column 2: </div>
+            <div class="col-4 bg-primary">Column 3: </div>
+        </div>
+    </div>
+
+    <h2>Vertical Alignment: align-items-end on row</h2>
+    <div class="container">
+        <div class="row align-items-end bg-danger" style="height: 100px;">
+            <div class="col-4 bg-info">Column 1: Row has class="row align-items-end bg-danger" </div>
+            <div class="col-4 bg-success">Column 2: </div>
+            <div class="col-4 bg-primary">Column 3: </div>
+        </div>
+    </div>
+
+    <h2>Vertical Alignment: align-items-end on row and col align-self-XXX</h2>
+    <div class="container">
+        <div class="row align-items-end bg-danger" style="height: 200px;">
+            <div class="col-3 bg-info align-self-center">Column 1: Row has class="row align-items-end bg-danger" col has
+                class align-self-center </div>
+            <div class="col-3 bg-success align-self-start">Column 2: col has class align-self-start </div>
+            <div class="col-3 bg-primary">Column 3: default align-self-end from row</div>
+            <div class="col-3 bg-primary align-self-center">Column 3: col has class align-self-end</div>
+        </div>
+    </div>
+
+    <h2>Horizontal Alignment: justify-content-start on row</h2>
+    <div class="container">
+        <div class="row justify-content-start bg-danger">
+            <div class="col-3 bg-info">Column 1: Row has class="row justify-content-start bg-danger" </div>
+            <div class="col-3 bg-success">Column 2: </div>
+            <div class="col-3 bg-primary">Column 3: </div>
+        </div>
+    </div>
+
+    <h2>Horizontal Alignment: justify-content-center on row</h2>
+    <div class="container">
+        <div class="row justify-content-center bg-danger">
+            <div class="col-3 bg-info">Column 1: Row has class="row justify-content-center bg-danger" </div>
+            <div class="col-3 bg-success">Column 2: </div>
+            <div class="col-3 bg-primary">Column 3: </div>
+        </div>
+    </div>
+
+    <h2>Horizontal Alignment: justify-content-end on row</h2>
+    <div class="container">
+        <div class="row justify-content-end bg-danger">
+            <div class="col-3 bg-info">Column 1: Row has class="row justify-content-end bg-danger" </div>
+            <div class="col-3 bg-success">Column 2: </div>
+            <div class="col-3 bg-primary">Column 3: </div>
+        </div>
+    </div>
+
+    <h2>Horizontal Alignment: justify-content-around on row</h2>
+    <div class="container">
+        <div class="row justify-content-around bg-danger">
+            <div class="col-3 bg-info">Column 1: Row has class="row justify-content-around bg-danger" </div>
+            <div class="col-3 bg-success">Column 2: </div>
+            <div class="col-3 bg-primary">Column 3: </div>
+        </div>
+    </div>
+
+    <h2>Horizontal Alignment: justify-content-evenly on row</h2>
+    <div class="container">
+        <div class="row justify-content-evenly bg-danger">
+            <div class="col-3 bg-info">Column 1: Row has class="row justify-content-evenly bg-danger" </div>
+            <div class="col-3 bg-success">Column 2: </div>
+            <div class="col-3 bg-primary">Column 3: </div>
+        </div>
+    </div>
+
+    <h2>Horizontal Alignment: justify-content-between on row</h2>
+    <div class="container">
+        <div class="row justify-content-between bg-danger">
+            <div class="col-3 bg-info">Column 1: Row has class="row justify-content-between bg-danger" </div>
+            <div class="col-3 bg-success">Column 2: </div>
+            <div class="col-3 bg-primary">Column 3: </div>
+        </div>
+    </div>
+
+    <h2>Breaking line - columns with w-100</h2>
+    <div class="container">
+        <div class="row ">
+            <div class="col-4 bg-info">Column 1: </div>
+            <div class="col-4 bg-success">Column 2: </div>
+            <div class="w-100"></div>
+            <div class="col-3 bg-primary">Column 3: </div>
+        </div>
+    </div>
+
+    <h2>Reordring - order-# (1-5)</h2>
+    <div class="container">
+        <div class="row ">
+            <div class="col bg-info">Column 1: no order applied</div>
+            <div class="col-4 bg-success order-5">Column 2: with order-5</div>
+            <div class="col-4 bg-success order-1">Column 3: with order-1</div>
+        </div>
+    </div>
+
+    <h2>Offsetting columns - offset-# (0 - 4)</h2>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 bg-info">col-md-md-4 </div>
+            <div class="col-md-4 offset-md-4 bg-success">col-md-4, offset-md-4</div>
+        </div>
+    </div>
+
+    <h2>Margin (utilities in bootstrap) </h2>
+    <p>ms-auto</p>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 bg-info">col-md-4 </div>
+            <div class="col-md-4 ms-auto bg-success">col-4</div>
+        </div>
+    </div>
+
+    <p>ms-md-auto</p>
+    <div class="container">
+        <div class="row ">
+            <div class="col-4 bg-info">col-md-4 </div>
+            <div class="col-4 ms-md-auto bg-success">col-4, ms-md-auto</div>
+        </div>
+    </div>
+
+    <h2>Clearfix - to clear the float </h2>
+    <p>div has clearfix and img has img-fluid, float-end and col-md-6</p>
+    <div class="container bg-info">
+        <div class="clearfix">
+            <img src="images/hero-img.png" class="img-fluid float-end col-md-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ullam possimus, sed accusamus similique,
+                adipisci nostrum dolores hic non pariatur numquam vero ducimus aspernatur natus blanditiis nemo quam
+                consectetur quod?</p>
+        </div>
+    </div>
 
 
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
