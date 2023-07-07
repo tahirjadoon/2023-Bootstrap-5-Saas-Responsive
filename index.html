@@ -7,23 +7,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-    <title>Root Index</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Bootstrap 5.1</title>
 
 </head>
 
 <body>
-    <h1>Root Index</h1>
+    <div class="container">
+        <h1>Bootstrap 5.1</h1>
+        <div class="my-2">
+            <div class="row row-cols-3">
+                <div class="col border border-black">
+                    <h3>Bootstrap Features</h3>
+                    <ol>
+                        <li><a href="feature/001ProjectSetup/index.html" target="_blank">001 Project Setup</a></a>
+                        </li>
+                        <li><a href="feature/002BootstrapBasics/index.html" target="_blank">002 Bootstrap Basics</a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col border border-black">
+                    <h3>Projects</h3>
+                </div>
+                <div class="col border border-black">
+                    <h3>Documents</h3>
+                    <ol>
+                        <li><a href="documents/001ProjectSetup_StarterTemaplet.docx"
+                                target="_blank">001ProjectSetup_StarterTemaplet</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
 
-    <ol>
-        <li><a href="feature/001ProjectSetup/index.html">001 Project Setup</a></a>
-        </li>
-        <li><a href="feature/002BootstrapBasics/index.html">002 Bootstrap Basics</a></li>
-    </ol>
+        <h2>Cheat sheet</h2>
+        <div class="my-2">
+            <div class="row row-cols-3">
+                <div class="col border border-black">
+                    <h3>Color</h3>
+                    <a href="feature/002BootstrapBasics/01color.html" target="_blank">Color worksheet</a>,
+                    <a href="https://getbootstrap.com/docs/5.1/utilities/colors/" target="_blank">Bootstrap
+                        Color</a>,
+                    <a href="https://getbootstrap.com/docs/5.1/utilities/background/" target="_blank">Bootstrap
+                        Background</a>
+                    <br>
+                    text-primary, text-danger, text-success<br>
+                    bg-primary, bg-danger, bg-success
+                </div>
+                <div class="col border border-black">
+                    <h3>CSS Variables</h3>
+                    <a href="feature/002BootstrapBasics/02cssVariables.html" target="_blank">CSS Variables
+                        worksheet</a>,
+                    <a href="https://getbootstrap.com/docs/5.1/customize/css-variables/" target="_blank">Bootstrap CSS
+                        Variables</a>
+                    <p>
+                        Usage:<br>
+                        &ensp;:root {<br>
+                        &emsp;--main-bg-color: brown;<br>
+                        &ensp; }<br>
+                        &ensp;element {<br>
+                        &emsp;background-color: var(--main-bg-color);<br>
+                        &ensp;}
 
+                    </p>
 
+                </div>
+                <div class="col border border-black">
+                    <h3>Breakpoints</h3>
+                    <a href="feature/002BootstrapBasics/03layout-breakpoints.html" target="_blank">Breakpoints
+                        worksheet</a>,
+                    <a href="https://getbootstrap.com/docs/5.1/layout/breakpoints/" target="_blank">Bootstrap
+                        Breakpoints</a>
+                    <br>
+                    xs: < 576px [0 to 575.98px] <br>
+                        sm: ≥576px [576px to 767.98px]<br>
+                        md: ≥768px [768px to 991.98px]<br>
+                        lg: ≥992px [992px to 1199.98px]<br>
+                        xl: ≥1200px [1200px to 1399.98]<br>
+                        xxl: ≥1400px
+                </div>
 
-    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+                <div class="col border border-black">
+                    <h3>Containers</h3>
+                    <a href="feature/002BootstrapBasics/04layout-containers.html" target="_blank">Containers
+                        worksheet</a>,
+                    <a href="https://getbootstrap.com/docs/5.1/layout/containers/" target="_blank">Bootstrap
+                        Containers</a>
+                    <ul>
+                        <li><code>.container:</code> which sets a <strong>max-width</strong> at each responsive
+                            breakpoint
+                        </li>
+                        <li><code>.container-fluid:</code> which is <strong>width: 100%</strong> at all breakpoints</li>
+                        <li><code>.container-{breakpoint}:</code> which is <strong>width: 100%</strong> until the
+                            specified
+                            breakpoint
+                        </li>
+                    </ul>
+                    breakpoint = -sm, -md, -lg, -xl, -xxl
+                </div>
+
+                <div class="col border border-black">
+                    <h3>Grid</h3>
+                    <a href="feature/002BootstrapBasics/05layout-grid.html">Grid worksheet</a>,
+                    <a href="https://getbootstrap.com/docs/5.1/layout/grid/" target="_blank">Bootstrap Grid</a>
+                    <br>
+                    <ul>
+                        <li>breakpoint = -sm, -md, -lg, -xl, -xxl</li>
+                        <li>col, col-{breakpoint}, col-{breakpoint}-#</li>
+                        <li>row, row-cols-#, row-cols-{breakpoint}-#, row-cols-auto, row-cols-{breakpoint}-auto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

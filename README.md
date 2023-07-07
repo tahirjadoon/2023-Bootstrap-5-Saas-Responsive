@@ -1,5 +1,7 @@
 "# 2023-Bootstrap-5-Saas-Responsive"
 
+Execute "index.html" in the root navigate all pages
+
 ## Project Template
 
 - Each section has its own repo which is then merged into main.
