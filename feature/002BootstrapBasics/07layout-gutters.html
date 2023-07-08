@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstarp Basics - Layout - Gutters</title>
+
+</head>
+
+<body>
+    <h1>Layout - Gutters</h1>
+
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+    <p>Gutters are the padding between your columns, used to responsively space and align content in the Bootstrap grid
+        system.</p>
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/layout/gutters/" target="_blank">Gutters</a></li>
+    </ul>
+
+    <h2>Simple div</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col border border-2 border-primary bg-success">
+                1
+            </div>
+            <div class="col border border-2 border-primary bg-success">
+                2
+            </div>
+        </div>
+    </div>
+
+    <h2>div inside a div</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col border border-2 border-primary bg-success">
+                <div class="p-3 border bg-danger">another div inside col. inner div with padding 3</div>
+            </div>
+            <div class="col border border-2 border-primary bg-success">
+                <div class="p-3 border bg-warning">another div inside col. inner div with padding 3</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Horizontal Gutters</h2>
+    <p>px-4 applied to container, gx-5 applied to row</p>
+    <div class="container px-4">
+        <div class="row gx-5">
+            <div class="col border border-2 border-primary bg-success">
+                <div class="p-3 border bg-danger">another div inside col. inner div with padding 3</div>
+            </div>
+            <div class="col border border-2 border-primary bg-success">
+                <div class="p-3 border bg-warning">another div inside col. inner div with padding 3</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Vertical Gutters</h2>
+    <div class="container my-5">
+        <div class="row gy-4">
+            <div class="col-6">Columns 1</div>
+            <div class="col-6">Columns 2</div>
+            <div class="col-6">Columns 3</div>
+            <div class="col-6">Columns 4</div>
+        </div>
+    </div>
+
+    <h2>Both Gutters</h2>
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-6">Columns 1</div>
+            <div class="col-6">Columns 2</div>
+            <div class="col-6">Columns 3</div>
+            <div class="col-6">Columns 4</div>
+        </div>
+    </div>
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
