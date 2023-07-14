@@ -17,25 +17,27 @@
         <h1>Bootstrap 5.1</h1>
         <div class="my-2">
             <div class="row row-cols-3">
-                <div class="col border border-black">
+                <div class="col border border-black pb-1">
                     <h3>Bootstrap Features</h3>
-                    <ol>
-                        <li><a href="feature/001ProjectSetup/index.html" target="_blank">001 Project Setup</a></a>
-                        </li>
-                        <li><a href="feature/002BootstrapBasics/index.html" target="_blank">002 Bootstrap Basics</a>
-                        </li>
-                    </ol>
+                    <div class="list-group">
+                        <a href="feature/001ProjectSetup/index.html" target="_blank"
+                            class="list-group-item list-group-item-action list-group-item-info">001
+                            Project Setup</a>
+                        <a href="feature/002BootstrapBasics/index.html" target="_blank"
+                            class="list-group-item list-group-item-action list-group-item-info">002
+                            Bootstrap Basics</a>
+                    </div>
                 </div>
-                <div class="col border border-black">
+                <div class="col border border-black pb-1">
                     <h3>Projects</h3>
                 </div>
-                <div class="col border border-black">
+                <div class="col border border-black pb-1">
                     <h3>Documents</h3>
-                    <ol>
-                        <li><a href="documents/001ProjectSetup_StarterTemaplet.docx"
-                                target="_blank">001ProjectSetup_StarterTemaplet</a>
-                        </li>
-                    </ol>
+                    <div class="list-group">
+                        <a href="documents/001ProjectSetup_StarterTemaplet.docx" target="_blank"
+                            class="list-group-item list-group-item-action list-group-item-info">001
+                            001ProjectSetup_StarterTemaplet</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,13 +47,36 @@
             <div class="row row-cols-3">
                 <div class="col border border-black">
                     <h3>General</h3>
-                    <a href="https://getbootstrap.com/docs/5.1/content/reboot/" target="_blank">Bootstrap
-                        Reboot</a><br>
+
+                    <div class="list-group list-group-horizontal-sm">
+                        <a href="feature/002BootstrapBasics/08content-typography.html" target="_blank"
+                            class="list-group-item list-group-item-info">Typography
+                            worksheet</a>
+                        <a href="https://getbootstrap.com/docs/5.1/content/reboot/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap
+                            Reboot</a>
+                        <a href="https://getbootstrap.com/docs/5.1/content/typography/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap
+                            Typography</a>
+                    </div>
+
+                    <br>
                     <strong>h & p</strong>
                     <ul>
+                        <li>p and h use <code>font-size: calc()</code> for xs screen to make sure it is responsive</li>
                         <li><code>h1-h6</code>: margin-bottom .5rem</li>
+                        <li>headers can also be applied as class to <code>p</code> tag like
+                            <code>&lt;p class="h1"&gt;Something&lt;/p&gt;</code>
+                        </li>
+                        <li>Can apply text-muted, display-# (1-6)</li>
                         <li><code>p</code>: margin-bottom 1rem</li>
-                        <li>They use <code>font-size: calc()</code> for xs screen to make sure it is responsive</li>
+                        <li>Can add classes to p like lead</li>
+                        <li>Other tags are mark, del, s, ins, small, strong, em, abbrev with title, blockquote,
+                            figure, figcaption with cite</li>
+                        <li>
+                            classes text-center, text-end, text-start
+                        </li>
+                        <li>ul: list-unstyled, list-inline, list-inline-item</li>
                     </ul>
                     <strong>lists</strong>
                     <ul>
@@ -65,8 +90,14 @@
 
                 <div class="col border border-black">
                     <h3>General</h3>
-                    <a href="https://getbootstrap.com/docs/5.1/content/reboot/" target="_blank">Bootstrap
-                        Reboot</a><br>
+
+                    <div class="list-group list-group-horizontal-sm">
+                        <a href="https://getbootstrap.com/docs/5.1/content/reboot/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap
+                            Reboot</a>
+                    </div>
+
+                    <br>
                     <strong>Others</strong>
                     <ul>
                         <li>&lt;code&gt;something&lt;/code&gt;: to create code element</li>
@@ -75,18 +106,24 @@
                         <li>&lt;var&gt;x&lt;/var&gt;: to show variable like <var>x</var></li>
                         <li>&lt;kbd&gt;x&lt;/kbd&gt;: to show user input like <kbd>cd</kbd></li>
                         <li>&lt;samp&gt;x&lt;/samp&gt;: to sample like <samp>sample</samp></li>
-                        <li>apply <code>role=button</code> to span to make pointer on buttons [<span
-                                role="button">MouseOver</span>]</li>
+                        <li>apply <code>role=button</code> to span to make pointer on buttons [<span>MouseOver</span>]
+                        </li>
                     </ul>
                 </div>
 
                 <div class="col border border-black">
                     <h3>Color</h3>
-                    <a href="feature/002BootstrapBasics/01color.html" target="_blank">Color worksheet</a>,
-                    <a href="https://getbootstrap.com/docs/5.1/utilities/colors/" target="_blank">Bootstrap
-                        Color</a>,
-                    <a href="https://getbootstrap.com/docs/5.1/utilities/background/" target="_blank">Bootstrap
-                        Background</a>
+
+                    <div class="list-group list-group-horizontal-sm">
+                        <a href="feature/002BootstrapBasics/01color.html" target="_blank "
+                            class="list-group-item list-group-item-info">Color worksheet</a>
+                        <a href="https://getbootstrap.com/docs/5.1/utilities/colors/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap
+                            Color</a>
+                        <a href="https://getbootstrap.com/docs/5.1/utilities/background/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap
+                            Background</a>
+                    </div>
                     <br>
                     text-primary, text-danger, text-success<br>
                     bg-primary, bg-danger, bg-success
@@ -94,10 +131,14 @@
 
                 <div class="col border border-black">
                     <h3>CSS Variables</h3>
-                    <a href="feature/002BootstrapBasics/02cssVariables.html" target="_blank">CSS Variables
-                        worksheet</a>,
-                    <a href="https://getbootstrap.com/docs/5.1/customize/css-variables/" target="_blank">Bootstrap CSS
-                        Variables</a>
+                    <div class="list-group list-group-horizontal-sm">
+                        <a href="feature/002BootstrapBasics/02cssVariables.html" target="_blank"
+                            class="list-group-item list-group-item-info">CSS Variables
+                            worksheet</a>
+                        <a href="https://getbootstrap.com/docs/5.1/customize/css-variables/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap CSS
+                            Variables</a>
+                    </div>
                     <p>
                         Usage:<br>
                         &ensp;:root {<br>
@@ -112,10 +153,14 @@
                 </div>
                 <div class="col border border-black">
                     <h3>Breakpoints</h3>
-                    <a href="feature/002BootstrapBasics/03layout-breakpoints.html" target="_blank">Breakpoints
-                        worksheet</a>,
-                    <a href="https://getbootstrap.com/docs/5.1/layout/breakpoints/" target="_blank">Bootstrap
-                        Breakpoints</a>
+                    <div class="list-group list-group-horizontal-sm">
+                        <a href="feature/002BootstrapBasics/03layout-breakpoints.html" target="_blank"
+                            class="list-group-item list-group-item-info">Breakpoints
+                            worksheet</a>
+                        <a href="https://getbootstrap.com/docs/5.1/layout/breakpoints/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap
+                            Breakpoints</a>
+                    </div>
                     <br>
                     xs: < 576px [0 to 575.98px] <br>
                         sm: ≥576px [576px to 767.98px]<br>
@@ -127,10 +172,14 @@
 
                 <div class="col border border-black">
                     <h3>Containers</h3>
-                    <a href="feature/002BootstrapBasics/04layout-containers.html" target="_blank">Containers
-                        worksheet</a>,
-                    <a href="https://getbootstrap.com/docs/5.1/layout/containers/" target="_blank">Bootstrap
-                        Containers</a>
+                    <div class="list-group list-group-horizontal-sm">
+                        <a href="feature/002BootstrapBasics/04layout-containers.html" target="_blank"
+                            class="list-group-item list-group-item-info">Containers
+                            worksheet</a>
+                        <a href="https://getbootstrap.com/docs/5.1/layout/containers/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap
+                            Containers</a>
+                    </div>
                     <ul>
                         <li><code>.container:</code> which sets a <strong>max-width</strong> at each responsive
                             breakpoint
@@ -146,8 +195,12 @@
 
                 <div class="col border border-black">
                     <h3>Grid</h3>
-                    <a href="feature/002BootstrapBasics/05layout-grid.html" target="_blank">Grid worksheet</a>,
-                    <a href="https://getbootstrap.com/docs/5.1/layout/grid/" target="_blank">Bootstrap Grid</a>
+                    <div class="list-group list-group-horizontal-sm">
+                        <a href="feature/002BootstrapBasics/05layout-grid.html" target="_blank"
+                            class="list-group-item list-group-item-info">Grid worksheet</a>
+                        <a href="https://getbootstrap.com/docs/5.1/layout/grid/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap Grid</a>
+                    </div>
                     <br>
                     <ul>
                         <li>breakpoint = -sm, -md, -lg, -xl, -xxl</li>
@@ -158,8 +211,13 @@
 
                 <div class="col border border-black">
                     <h3>Columns</h3>
-                    <a href="feature/002BootstrapBasics/06layout-columns.html" target="_blank">Columns worksheet</a>,
-                    <a href="https://getbootstrap.com/docs/5.1/layout/columns/" target="_blank">Bootstrap Columns</a>
+                    <div class="list-group list-group-horizontal-sm">
+                        <a href="feature/002BootstrapBasics/06layout-columns.html" target="_blank"
+                            class="list-group-item list-group-item-info">Columns worksheet</a>
+                        <a href="https://getbootstrap.com/docs/5.1/layout/columns/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap Columns</a>
+                    </div>
+
                     <br>
                     <ul>
                         <li>align-items-center, align-items-start, align-items-end</li>
@@ -177,9 +235,13 @@
                 </div>
 
                 <div class="col border border-black">
-                    <h3>Columns</h3>
-                    <a href="feature/002BootstrapBasics/07layout-gutters.html" target="_blank">Gutters worksheet</a>,
-                    <a href="https://getbootstrap.com/docs/5.1/layout/gutters/" target="_blank">Bootstrap Gutters</a>
+                    <h3>Gutters</h3>
+                    <div class="list-group list-group-horizontal-sm">
+                        <a href="feature/002BootstrapBasics/07layout-gutters.html" target="_blank"
+                            class="list-group-item list-group-item-info">Gutters worksheet</a>
+                        <a href="https://getbootstrap.com/docs/5.1/layout/gutters/" target="_blank"
+                            class="list-group-item list-group-item-warning">Bootstrap Gutters</a>
+                    </div>
                     <br>
                     <ul>
                         <li>gx-#, gy-#, g-#, g-{breakpoint}-# (# = 0-5)</li>

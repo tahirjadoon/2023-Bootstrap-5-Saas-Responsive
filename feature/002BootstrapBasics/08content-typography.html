@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstarp Basics - Content - Typography</title>
+
+</head>
+
+<body>
+    <h1>002 Bootstarp Basics - Content - Typography</h1>
+
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/content/typography/" target="_blank">Typography</a></li>
+    </ul>
+
+    <h1>This is h1</h1>
+    <p class="h1">This is p with class of h1</p>
+    <hr>
+    <h2>This is h2</h2>
+    <p class="h2">This is p with class of h2</p>
+    <hr>
+    <h3>This is h3</h3>
+    <p class="h3">This is p with class of h3</p>
+    <hr>
+    <h4>This is h4</h4>
+    <p class="h4">This is p with class of h4</p>
+    <hr>
+    <h5>This is h5</h5>
+    <p class="h5">This is p with class of h5</p>
+    <hr>
+    <h6>This is h6</h6>
+    <p class="h6">This is p with class of h6</p>
+    <hr>
+    <h3>Heading with h3 <span class="text-muted">having text-muted applied to span inside it</span></h3>
+    <hr>
+    <p class="lead">This is a p tag with class="lead" applied</p>
+    <p>And this is regular p</p>
+    <hr>
+    <p><span class="lead">This is lead section</span> in the p. lead is applied to the span.</p>
+    <hr>
+
+
+    <h2>Inline text elements</h2>
+    <p><code>mark</code>: You can use <code>mark</code> tag to <mark>highlight</mark> text.</p>
+    <p><code>del</code>: <del>This line has <code>del</code> tag applied</del>, meaning treat as deleted.</p>
+    <p><code>s</code>: <s>This line has <code>s</code> tag applied</s>, this is same as del tag</p>
+    <p><code>ins</code>: <ins>This line has <code>ins</code> tag applied</ins>, to be treated as an addition to the
+        document</p>
+    <p><code>u</code>: <u>This line has <code>u</code> tag applies</u>, meaning render as underlined</p>
+    <p><code>small</code>: <small>This line has <code>small</code> tag applied</small>, meant to be treated as fine
+        print</p>
+    <p><code>strong</code>: <strong>This line has <code>strong</code> tag applied</strong>, meaning render as bold text
+    </p>
+    <p><code>em</code>: <em>This line has <code>em</code> tag applied</em>, meaning treat as italicized</p>
+
+    <hr>
+
+    <h2>Abbreviations</h2>
+    <p><abbr title="attribute">attr</abbr></p>
+    <p><abbr title="Hyper text mark up language" class="initialism">html</abbr> html will show upper case since
+        class="initialism" is applied</p>
+    <hr>
+
+
+    <h2>Blockquote</h2>
+    <blockquote class="blockquote">
+        <p>This p is inside the <code>blockquote</code> tag</p>
+    </blockquote>
+
+    <hr>
+
+
+    <h2>Figure, Blockquote with figcaption and cite</h2>
+    <figure>
+        <blockquote class="blockquote">
+            <p>This p is inside the <code>blockquote</code> tag</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">this is figcaption tag <cite title="Source Title">and this is cite in
+                it</cite></figcaption>
+    </figure>
+
+
+    <hr>
+
+    <h2>text-center class</h2>
+    <figure class="text-center">
+        <blockquote class="blockquote">
+            <p>This p is inside the <code>blockquote</code> tag</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">this is figcaption tag <cite title="Source Title">and this is cite in
+                it</cite></figcaption>
+    </figure>
+
+    <h2>text-end class</h2>
+    <figure class="text-end">
+        <blockquote class="blockquote">
+            <p>This p is inside the <code>blockquote</code> tag</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">this is figcaption tag <cite title="Source Title">and this is cite in
+                it</cite></figcaption>
+    </figure>
+
+    <h2>text-start class</h2>
+    <figure class="text-start">
+        <blockquote class="blockquote">
+            <p>This p is inside the <code>blockquote</code> tag</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">this is figcaption tag <cite title="Source Title">and this is cite in
+                it</cite></figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>List Style None</h2>
+    <p>ul has class="list-unstyled"</p>
+    <ul class="list-unstyled">
+        <li>It appears completly unstyles</li>
+        <li>Nested lists
+            <ul>
+                <li>are unaffected by this style</li>
+                <li>Will still show a bullet</li>
+            </ul>
+        </li>
+        <li>This may still come in handy in some situitions</li>
+    </ul>
+
+    <h2>List Inline</h2>
+    <p>ul has class="list-inline" and li has class="list-inline-item"</p>
+    <ul class="list-inline">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+    </ul>
+
+    <hr>
+
+    <h2>Descripton Lists dl, dt, dd</h2>
+    <div class="container">
+        <dl class="row">
+            <dt class="col-sm-3">This is dt line 1</dt>
+            <dd class="col-sm-9">This is dd line 1</dd>
+
+            <dt class="col-sm-3">This is dt line 2</dt>
+            <dd class="col-sm-9">This is dd line 2</dd>
+
+            <dt class="col-sm-3">Nesting</dt>
+            <dd class="col-sm-9">
+                <dl class="row">
+                    <dt class="col-sm-3">Nested Header</dt>
+                    <dd class="col-sm-9">Nested Text</dd>
+                </dl>
+            </dd>
+        </dl>
+    </div>
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
