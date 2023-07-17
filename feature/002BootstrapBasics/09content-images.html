@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstarp Basics - Content - Images</title>
+
+</head>
+
+<body>
+    <h1>002 Bootstarp Basics - Content - Images</h1>
+
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/content/images/" target="_blank">Images</a></li>
+    </ul>
+
+    <h2>Responsive Images</h2>
+    <p>apply class <code>image-fluid</code>. This applies max-width: 100% and height: auto</p>
+    <div class="container">
+        <img src="images/1.jpg" class="img-fluid">
+    </div>
+
+    <h2>Image Thumbnails</h2>
+    <p>apply class <code>img-thumbnail</code>. Check <a href="https://getbootstrap.com/docs/5.1/utilities/borders/"
+            target="_blank">border radius utilities</a></p>
+    <p>border gets applied</p>
+    <div class="container">
+        <img src="images/2.jpg" class="img-thumbnail">
+    </div>
+
+    <h2>Aligning Images</h2>
+    <p>Class = rounded and float-start and float-end</p>
+    <div class="container">
+        <div class="clearfix">
+            <img src="images/1.jpg" class="rounded float-start" style="width: 50%;">
+            <img src="images/2.jpg" class="rounded float-end" style="width: 50%;">
+        </div>
+    </div>
+
+    <h2>Aligning Images Center - 1</h2>
+    <p>Class = mx-auto d-block</p>
+    <div class="container">
+        <img src="images/1.jpg" class="mx-auto d-block" style="width: 50%;">
+    </div>
+
+    <h2>Aligning Images Center - 2</h2>
+    <div class="container">
+        <div class="text-center">
+            <img src="images/1.jpg" style="width: 50%;">
+        </div>
+    </div>
+
+    <h2>Picture</h2>
+    <picture>
+        <source srcset="images/hero-img.png" type="image">
+        <img src="images/hero-img.png" class="img-fluid">
+    </picture>
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
