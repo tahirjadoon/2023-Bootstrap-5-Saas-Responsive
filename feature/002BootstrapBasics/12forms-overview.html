@@ -8,12 +8,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-    <title>002 Bootstarp Basics - Forms - TextBox TextArea</title>
+    <title>002 Bootstrap Basics - Forms - Overview</title>
 
 </head>
 
 <body>
-    <h1>002 Bootstarp Basics - Forms - Overview</h1>
+    <h1>002 Bootstrap Basics - Forms - Overview</h1>
 
     <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
 
@@ -25,126 +25,158 @@
     </ul>
 
     <div class="container">
+        <div class="row">
+            <div class="col-md-3">
 
-        <h2>Basic Form</h2>
-        <ul>
-            <li>Form has no class applied</li>
-            <li>Text has class <code>form-text</code> applied</li>
-            <li>Label has class <code>form-label</code> applied</li>
-            <li>Input has class <code>form-control</code> applied</li>
-            <li>Checkbox has class <code>form-check-label</code> applied and the label for the check box has
-                <code>form-check-input</code> applied
-            </li>
-        </ul>
-        <form>
-            <div class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium aliquam
-                quae expedita ex voluptate quisquam dignissimos quidem assumenda aut eveniet dolorem qui magni ea, unde
-                minus in harum odit?</div>
-            <div>
-                <label for="txtEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="txtEmail" name="txtEmail">
-            </div>
-            <div>
-                <label for="txtPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="txtPassword" name="txtPassword">
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="chkConfirm" name="chkConfirm">
-                <label for="chkConfirm" class="form-check-label">Confirm</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+                <ul class="list-group flex-md-column flex-row">
+                    <li class="list-group-item list-group-item-warning"><a href="12forms-overview.html"
+                            class="d-block text-decoration-none">Forms Overview
+                            worksheet</a></li>
+                    <li class="list-group-item"><a href="13forms-formcontrol.html"
+                            class="d-block text-decoration-none">Forms FormControl
+                            worksheet</a></li>
+                </ul>
 
-        <hr>
+            </div>
+            <div class="col-md-9">
+                <!--Content start -->
 
-        <h2>Form with Gutters, Alignment and Aria Describedby</h2>
-        <ul>
-            <li>Form has classes <code>row g-3 align-items-center border border-2 border-danger rounded</code> applied
-            </li>
-            <li>Each div has classes <code>col-auto bg-{primary/success/warning}</code> and background applied</li>
-            <li>Label has class <code>col-form-label</code> applied</li>
-            <li>Textbox has class <code>form-control</code> applied</li>
-            <li>Textbox also has aria-describedby applied</li>
-            <li>Descriptive text has class <code>form-text</code> applied</li>
-        </ul>
-        <form class="row g-3 align-items-center border border-2 border-danger rounded">
-            <div class="col-auto bg-primary">
-                <label for="txtPassword2" class="col-form-label">Password</label>
-            </div>
-            <div class="col-auto bg-success">
-                <input type="password" id="txtPassword2" class="form-control" aria-describedby="passwordDescribed">
-            </div>
-            <div class="col-auto bg-warning">
-                <span class="form-text" id="passwordDescribed">Must be 8 to 20 chars long</span>
-            </div>
-        </form>
+                <h2>Basic Form</h2>
+                <ul>
+                    <li>Form has no class applied</li>
+                    <li>Text has class <code>form-text</code> applied</li>
+                    <li>Label has class <code>form-label</code> applied</li>
+                    <li>Input has class <code>form-control</code> applied</li>
+                    <li>Checkbox has class <code>form-check-label</code> applied and the label for the check box has
+                        <code>form-check-input</code> applied
+                    </li>
+                </ul>
+                <form>
+                    <div class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium
+                        aliquam
+                        quae expedita ex voluptate quisquam dignissimos quidem assumenda aut eveniet dolorem qui magni
+                        ea, unde
+                        minus in harum odit?</div>
+                    <div>
+                        <label for="txtEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="txtEmail" name="txtEmail">
+                    </div>
+                    <div>
+                        <label for="txtPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="txtPassword" name="txtPassword">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="chkConfirm" name="chkConfirm">
+                        <label for="chkConfirm" class="form-check-label">Confirm</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
 
-        <hr>
+                <hr>
 
-        <h2>Disabled Form Control</h2>
-        <ul>
-            <li>Form has no class applied</li>
-            <li>Text has class <code>form-text</code> applied</li>
-            <li>Label has class <code>form-label</code> applied</li>
-            <li>Input has class <code>form-control</code> applied</li>
-            <li>Checkbox has class <code>form-check-label</code> applied and the label for the check box has
-                <code>form-check-input</code> applied
-            </li>
-            <li>Email textbox has disabled atribute applied to it</li>
-        </ul>
-        <form>
-            <div class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium aliquam
-                quae expedita ex voluptate quisquam dignissimos quidem assumenda aut eveniet dolorem qui magni ea, unde
-                minus in harum odit?</div>
-            <div>
-                <label for="txtEmail3" class="form-label">Email</label>
-                <input type="email" class="form-control" id="txtEmail3" name="txtEmail" disabled>
-            </div>
-            <div>
-                <label for="txtPassword3" class="form-label">Password</label>
-                <input type="password" class="form-control" id="txtPassword3" name="txtPassword">
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="chkConfirm3" name="chkConfirm">
-                <label for="chkConfirm3" class="form-check-label">Confirm</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+                <h2>Form with Gutters, Alignment and Aria Describedby</h2>
+                <ul>
+                    <li>Form has classes <code>row g-3 align-items-center border border-2 border-danger rounded</code>
+                        applied
+                    </li>
+                    <li>Each div has classes <code>col-auto bg-{primary/success/warning}</code> and background applied
+                    </li>
+                    <li>Label has class <code>col-form-label</code> applied</li>
+                    <li>Textbox has class <code>form-control</code> applied</li>
+                    <li>Textbox also has aria-describedby applied</li>
+                    <li>Descriptive text has class <code>form-text</code> applied</li>
+                </ul>
+                <form class="row g-3 align-items-center border border-2 border-danger rounded">
+                    <div class="col-auto bg-primary">
+                        <label for="txtPassword2" class="col-form-label">Password</label>
+                    </div>
+                    <div class="col-auto bg-success">
+                        <input type="password" id="txtPassword2" class="form-control"
+                            aria-describedby="passwordDescribed">
+                    </div>
+                    <div class="col-auto bg-warning">
+                        <span class="form-text" id="passwordDescribed">Must be 8 to 20 chars long</span>
+                    </div>
+                </form>
 
-        <hr>
+                <hr>
 
-        <h2>Disabled Form</h2>
-        <ul>
-            <li>Form has no class applied</li>
-            <li>Text has class <code>form-text</code> applied</li>
-            <li>Label has class <code>form-label</code> applied</li>
-            <li>Input has class <code>form-control</code> applied</li>
-            <li>Checkbox has class <code>form-check-label</code> applied and the label for the check box has
-                <code>form-check-input</code> applied
-            </li>
-            <li>Introduce a <code>fieldset</code> and apply <code>disabled</code> attribute to it</li>
-        </ul>
-        <form>
-            <fieldset disabled>
-                <div class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium aliquam
-                    quae expedita ex voluptate quisquam dignissimos quidem assumenda aut eveniet dolorem qui magni ea,
-                    unde
-                    minus in harum odit?</div>
-                <div>
-                    <label for="txtEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="txtEmail4" name="txtEmail">
-                </div>
-                <div>
-                    <label for="txtPassword4" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="txtPassword4" name="txtPassword">
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="chkConfirm4" name="chkConfirm">
-                    <label for="chkConfirm4" class="form-check-label">Confirm</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </fieldset>
-        </form>
+                <h2>Disabled Form Control</h2>
+                <ul>
+                    <li>Form has no class applied</li>
+                    <li>Text has class <code>form-text</code> applied</li>
+                    <li>Label has class <code>form-label</code> applied</li>
+                    <li>Input has class <code>form-control</code> applied</li>
+                    <li>Checkbox has class <code>form-check-label</code> applied and the label for the check box has
+                        <code>form-check-input</code> applied
+                    </li>
+                    <li>Email textbox has disabled atribute applied to it</li>
+                </ul>
+                <form>
+                    <div class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium
+                        aliquam
+                        quae expedita ex voluptate quisquam dignissimos quidem assumenda aut eveniet dolorem qui magni
+                        ea, unde
+                        minus in harum odit?</div>
+                    <div>
+                        <label for="txtEmail3" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="txtEmail3" name="txtEmail" disabled>
+                    </div>
+                    <div>
+                        <label for="txtPassword3" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="txtPassword3" name="txtPassword">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="chkConfirm3" name="chkConfirm">
+                        <label for="chkConfirm3" class="form-check-label">Confirm</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                <hr>
+
+                <h2>Disabled Form</h2>
+                <ul>
+                    <li>Form has no class applied</li>
+                    <li>Text has class <code>form-text</code> applied</li>
+                    <li>Label has class <code>form-label</code> applied</li>
+                    <li>Input has class <code>form-control</code> applied</li>
+                    <li>Checkbox has class <code>form-check-label</code> applied and the label for the check box has
+                        <code>form-check-input</code> applied
+                    </li>
+                    <li>Introduce a <code>fieldset</code> and apply <code>disabled</code> attribute to it</li>
+                </ul>
+                <form>
+                    <fieldset disabled>
+                        <div class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium
+                            aliquam
+                            quae expedita ex voluptate quisquam dignissimos quidem assumenda aut eveniet dolorem qui
+                            magni ea,
+                            unde
+                            minus in harum odit?</div>
+                        <div>
+                            <label for="txtEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="txtEmail4" name="txtEmail">
+                        </div>
+                        <div>
+                            <label for="txtPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="txtPassword4" name="txtPassword">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="chkConfirm4" name="chkConfirm">
+                            <label for="chkConfirm4" class="form-check-label">Confirm</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </fieldset>
+                </form>
+
+                <!-- content end-->
+            </div>
+        </div>
+
+
+
+
 
     </div>
 
