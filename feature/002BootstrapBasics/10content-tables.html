@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstarp Basics - Content - Tables</title>
+
+</head>
+
+<body>
+    <h1>002 Bootstarp Basics - Content - Tables</h1>
+
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/content/tables/" target="_blank">Tables</a></li>
+    </ul>
+
+
+
+    <div class="container-fluid ">
+        <ul>
+            <li>Due to the widespread use of <code>&lt;table&gt;</code> elements across third-party widgets like
+                calendars
+                and
+                date pickers, Bootstrap's tables are <strong>opt-in</strong>.</li>
+            <li>Add the base class <code>.table</code> to any
+                <code>&lt;table&gt;</code>, then extend with our optional modifier classes or custom styles.
+            </li>
+            <li>All table
+                styles
+                are not inherited in Bootstrap, meaning any nested tables can be styled independent from the parent.
+            </li>
+        </ul>
+        <div class="row">
+            <!--main row starts-->
+
+            <div class="col-2">
+                <!--Navigation column starts-->
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Overview</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Variants</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Accented tables</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Hoverable rows</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-5">Active tables</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-6">Table borders</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-7">Tables without borders</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-8">Small tables</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-9">Vertical alignment</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-10">Nesting</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-11">Table head</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-12">Table foot</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-13">Captions</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-14">Always responsive</a>
+                </div>
+                <!--Navigation column ends-->
+            </div>
+
+            <div class="col-9">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0"
+                    class="scrollspy-example overflow-auto" tabindex="0" style="position: relative; height: 86vh">
+                    <!--content columm starts-->
+                    <h2 id="list-item-1">Overview</h2>
+                    <div class="mb-2">
+                        <p>With <code>class=table</code></p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Without the table class</p>
+                        <table class="">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-2">Variants</h2>
+                    <ul>
+                        <li>classes applied to table: <code>table table-info</code></li>
+                        <li>individually rows has classes applied as well here</li>
+                    </ul>
+                    <div class="mb-2">
+                        <table class="table table-info">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>row has class <code>table-primary</code></td>
+                                </tr>
+                                <tr class="table-secondary">
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>row has class <code>table-secondary</code></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>row has class <code>table-success</code></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <th scope="row">4</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>row has class <code>table-danger</code></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <th scope="row">5</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>row has class <code>table-warning</code></td>
+                                </tr>
+                                <tr class="table-light">
+                                    <th scope="row">6</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>row has class <code>table-light</code></td>
+                                </tr>
+                                <tr class="table-dark">
+                                    <th scope="row">7</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>row has class <code>table-dark</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td class="table-danger">td has class <code>table-danger</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-3">Accented tables - striped rows</h2>
+                    <p>table has classes <code>table table-info table-striped</code> applied</p>
+                    <div class="mb-2">
+                        <table class="table table-info table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@something1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something2</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@something3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-4">Hoverable rows</h2>
+                    <p>table has class <code>table table-danger table-hover table-striped</code> applied</p>
+                    <div class="mb-2">
+                        <table class="table table-danger table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@something1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something2</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@something3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-5">Active tables</h2>
+                    <p>table has classes <code>table</code> applied</p>
+                    <div class="mb-2">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-active">
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>This row has <code>table-active</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td class="table-active">his col has <code>table-active</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@something3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@something8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-6">Table borders</h2>
+                    <p>table has classes <code>table table-bordered border-primary</code> applied</p>
+                    <div class="mb-2">
+                        <table class="table table-bordered border-primary">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-7">Tables without borders</h2>
+                    <p>table has classes <code>table table-borderless</code> applied</p>
+                    <div class="mb-2">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-8">Small tables</h2>
+                    <p>table has class <code>table table-sm</code> applied</p>
+                    <div class="mb-2">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-9">Vertical alignment</h2>
+                    <p>table has classes <code>table align-middle</code> applied</p>
+                    <div class="mb-2">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Col 1</th>
+                                    <th scope="col">Col 2</th>
+                                    <th scope="col">Col 3</th>
+                                    <th scope="col">Col 4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">This row is getting styles from table</th>
+                                    <td>This is some other content</td>
+                                    <td>This is content to</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corrupti
+                                        laudantium quod molestias fugit consequatur nostrum in quis voluptate. Eaque
+                                        numquam impedit magni aperiam, maxime iusto assumenda fuga sit fugit. Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Illo provident, sunt
+                                        assumenda aspernatur vero doloribus quas atque sit quo facere nulla repellendus
+                                        ex numquam error modi iste aliquam eos veritatis.</td>
+                                </tr>
+                                <tr class="align-bottom">
+                                    <th scope="row">This row has class <code>align-bottom</code> applied</th>
+                                    <td>This is some other content</td>
+                                    <td>This is content to</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corrupti
+                                        laudantium quod molestias fugit consequatur nostrum in quis voluptate. Eaque
+                                        numquam impedit magni aperiam, maxime iusto assumenda fuga sit fugit. Lorem
+                                        ipsum dolor sit, amet consectetur adipisicing elit. Nam debitis architecto
+                                        sapiente facere! Dicta numquam itaque debitis sed quam, culpa architecto,
+                                        facilis neque eum voluptatum quae necessitatibus odit aut obcaecati!</td>
+                                </tr>
+                                <tr class="align-top">
+                                    <th scope="row">This row has class <code>align-top</code> applied</th>
+                                    <td>This is some other content</td>
+                                    <td class="align-bottom">This td has class <code>align-bottom</code> applied</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corrupti
+                                        laudantium quod molestias fugit consequatur nostrum in quis voluptate. Eaque
+                                        numquam impedit magni aperiam, maxime iusto assumenda fuga sit fugit. Lorem
+                                        ipsum dolor sit, amet consectetur adipisicing elit. Consectetur ex quam fugiat
+                                        rem distinctio sequi excepturi sapiente culpa veritatis cumque laboriosam
+                                        quibusdam ea nihil architecto deleniti, dolorem sed, optio recusandae.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-10">Nesting</h2>
+                    <ul>
+                        <li>Outer table has classes <code>table table-dark</code> applied </li>
+                        <li>Nested tables do not get the parent table styles other than table-dark etc</li>
+                    </ul>
+                    <div class="mb-2">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>
+                                        <table class="table table-light">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">First Name</th>
+                                                    <th scope="col">Last Name</th>
+                                                    <th scope="col">Handle</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>I am </td>
+                                                    <td>Nested</td>
+                                                    <td>@Table</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td colspan="2">Larry the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-11">Table head</h2>
+                    <ul>
+                        <li>table has class <code>table</code> applied</li>
+                        <li>thead has class <code>table-primary</code> applied</li>
+                    </ul>
+                    <div class="mb-2">
+                        <table class="table">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-12">Table foot</h2>
+                    <ul>
+                        <li>table has class <code>table</code> applied</li>
+                        <li><code>&lt;tfoot</tfoot>&gt;</code> has been added to the bottom</li>
+                    </ul>
+                    <div class="mb-2">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <th scope="row">tfoot</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-13">Captions</h2>
+                    <ul>
+                        <li>table has class <code>table caption-top</code> applied</li>
+                        <li><code>&lt;caption&gt;</code> tag has been added after table tag</li>
+                    </ul>
+                    <div class="mb-2">
+                        <table class="table caption-top">
+                            <caption>List of users</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+
+
+                    <h2 id="list-item-14">Always responsive</h2>
+                    <ul>
+                        <li>Wrap table inside a <code>div</code> with class of
+                            <code>table-responsive or table-responsive-sm/md/lg/xl/xxl</code>
+                        </li>
+                    </ul>
+                    <div class="mb-2">
+                        <div class="table-responsive-sm">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Handle</th>
+                                        <th scope="col">City</th>
+                                        <th scope="col">State</th>
+                                        <th scope="col">Zip</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>City</td>
+                                        <td>State</td>
+                                        <td>Zip</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>City</td>
+                                        <td>State</td>
+                                        <td>Zip</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>City</td>
+                                        <td>State</td>
+                                        <td>Zip</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!--content columm ends-->
+                </div>
+            </div>
+
+            <!--main row ends-->
+        </div>
+    </div>
+
+
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
