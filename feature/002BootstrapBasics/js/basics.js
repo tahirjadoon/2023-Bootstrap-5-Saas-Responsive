@@ -20,4 +20,3 @@ function applyFormsNavActiveClass() {
     item.classList.add("list-group-item-warning");
     
 }
-
