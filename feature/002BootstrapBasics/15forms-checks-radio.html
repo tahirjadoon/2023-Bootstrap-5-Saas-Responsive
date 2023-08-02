@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstrap Basics - Forms - CheckBox RadioBox</title>
+
+</head>
+
+<body>
+    <h1>002 Bootstrap Basics - Forms - CheckBox RadioBox</h1>
+
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/" target="_blank">Forms - CheckBox
+                RadioBox</a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-3">
+                <ul class="list-group flex-md-column flex-row">
+                    <li class="list-group-item" id="12forms-overview"><a href="12forms-overview.html"
+                            class="d-block text-decoration-none">Forms Overview
+                            worksheet</a></li>
+                    <li class="list-group-item" id="13forms-formcontrol"><a href="13forms-formcontrol.html"
+                            class="d-block text-decoration-none">Forms FormControl
+                            worksheet</a></li>
+                    <li class="list-group-item" id="14forms-select"><a href="14forms-select.html"
+                            class="d-block text-decoration-none">Forms Select
+                            worksheet</a></li>
+                    <li class="list-group-item" id="15forms-checks-radio"><a href="15forms-checks-radio.html"
+                            class="d-block text-decoration-none">Forms CheckBox RadioBox
+                            worksheet</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <!--Content start -->
+
+                <div class="row">
+                    <div class="col-6">
+                        <!--Checkbox Start-->
+                        <h2>Checkbox - Basic</h2>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check1">
+                            <label for="check1" class="form-check-label">Default Checkbox</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check2" checked>
+                            <label for="check2" class="form-check-label">Default Checkbox Checked</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check3" disabled>
+                            <label for="check3" class="form-check-label">Default Checkbox Disabled</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check4" disabled checked>
+                            <label for="check4" class="form-check-label">Default Checkbox Disabled Checked</label>
+                        </div>
+
+                        <hr>
+
+                        <h2>Checkbox - Switch</h2>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="check5">
+                            <label for="check5" class="form-check-label">Default Checkbox</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="check6" checked>
+                            <label for="check6" class="form-check-label">Default Checkbox Checked</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="check7" disabled>
+                            <label for="check7" class="form-check-label">Default Checkbox Disabled</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="check8" disabled checked>
+                            <label for="check8" class="form-check-label">Default Checkbox Disabled Checked</label>
+                        </div>
+
+                        <hr>
+
+                        <h2>Checkbox - Inline</h2>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check9">
+                            <label for="check9" class="form-check-label">One</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check10" checked>
+                            <label for="check10" class="form-check-label">Two</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check11" disabled>
+                            <label for="check11" class="form-check-label">Three</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check12" disabled checked>
+                            <label for="check12" class="form-check-label">Four</label>
+                        </div>
+
+                        <hr>
+
+                        <h2>Checkbox - Toggle Button</h2>
+                        <input type="checkbox" class="btn-check" id="check13">
+                        <label for="check13" class="btn btn-outline-danger mb-2">Checkbox Toggle Button</label>
+                        <br>
+                        <input type="checkbox" class="btn-check" id="check14" checked autocomplete="off">
+                        <label for="check14" class="btn btn-outline-info">Checkbox Toggle Button Checked</label>
+
+
+                        <!--Checkbox End-->
+                    </div>
+                    <div class="col-6">
+                        <!--Radio Start-->
+                        <h2>Radio - Basic</h2>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1">
+                            <label for="radio1" class="form-check-label">Default Radio</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" checked>
+                            <label for="radio2" class="form-check-label">Default Radio Checked</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio3" disabled>
+                            <label for="radio3" class="form-check-label">Default Radio Disabled</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio4" disabled checked>
+                            <label for="radio4" class="form-check-label">Default Radio Disabled Checked</label>
+                        </div>
+
+                        <hr>
+
+                        <h2>Radio - Switch</h2>
+                        <div class="form-check form-switch">
+                            <input type="radio" class="form-check-input" id="radio5">
+                            <label for="radio5" class="form-check-label">Default Radio</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input type="radio" class="form-check-input" id="radio6" checked>
+                            <label for="radio6" class="form-check-label">Default Radio Checked</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input type="radio" class="form-check-input" id="radio7" disabled>
+                            <label for="radio7" class="form-check-label">Default Radio Disabled</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input type="radio" class="form-check-input" id="radio8" disabled checked>
+                            <label for="radio8" class="form-check-label">Default Radio Disabled Checked</label>
+                        </div>
+
+                        <hr>
+
+                        <h2>Radio - Inline</h2>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="radio9">
+                            <label for="radio9" class="form-check-label">One</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="radio10" checked>
+                            <label for="radio10" class="form-check-label">Two</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="radio11" disabled>
+                            <label for="radio11" class="form-check-label">Three</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="radio12" disabled checked>
+                            <label for="radio12" class="form-check-label">Four</label>
+                        </div>
+
+                        <hr>
+
+                        <h2>Radio - Toggle Button</h2>
+                        <input type="radio" class="btn-check" id="radio13">
+                        <label for="radio13" class="btn btn-outline-danger mb-2">Radio Toggle Button</label>
+                        <br>
+                        <input type="radio" class="btn-check" id="radio14" checked autocomplete="off">
+                        <label for="radio14" class="btn btn-outline-info">Radio Toggle Button Checked</label>
+
+                        <!--Radio End-->
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- content end-->
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/basics.js"></script>
+
+    <script>
+        applyFormsNavActiveClass();
+    </script>
+</body>
+
+</html>
