@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstrap Basics - Forms - Input Group</title>
+
+</head>
+
+<body>
+    <h1>002 Bootstrap Basics - Forms - Input Group</h1>
+
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/forms/input-group/" target="_blank">Forms - Input Group</a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-3">
+                <ul class="list-group flex-md-column flex-row">
+                    <li class="list-group-item" id="12forms-overview"><a href="12forms-overview.html"
+                            class="d-block text-decoration-none">Forms Overview
+                            worksheet</a></li>
+                    <li class="list-group-item" id="13forms-formcontrol"><a href="13forms-formcontrol.html"
+                            class="d-block text-decoration-none">Forms FormControl
+                            worksheet</a></li>
+                    <li class="list-group-item" id="14forms-select"><a href="14forms-select.html"
+                            class="d-block text-decoration-none">Forms Select
+                            worksheet</a></li>
+                    <li class="list-group-item" id="15forms-checks-radio"><a href="15forms-checks-radio.html"
+                            class="d-block text-decoration-none">Forms CheckBox RadioBox
+                            worksheet</a></li>
+                    <li class="list-group-item" id="16forms-range"><a href="16forms-range.html"
+                            class="d-block text-decoration-none">Forms Range worksheet</a></li>
+                    <li class="list-group-item" id="17forms-input-group"><a href="17forms-input-group.html"
+                            class="d-block text-decoration-none">Forms Input Group worksheet</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <!--Content start -->
+
+                <div class="row">
+                    <div class="col-6">
+                        <!-- Left Column Starts -->
+
+                        <h2>Basic Example</h2>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">@</span>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                            <span class="input-group-text">@mail.com</span>
+                        </div>
+
+                        <hr>
+
+                        <h2>Example with Label</h2>
+                        <label for="basicurl" class="form-label">URL</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">https://example.com</span>
+                            <input type="url" class="form-control" placeholder="URL" id="basicurl">
+                        </div>
+
+                        <hr>
+
+                        <h2>Multiple Example</h2>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">https://</span>
+                            <input type="text" class="form-control" placeholder="URL">
+                            <span class="input-group-text">.com</span>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">https://</span>
+                            <span class="input-group-text">.com</span>
+                            <input type="text" class="form-control" placeholder="input 1">
+                            <input type="text" class="form-control" placeholder="input 2">
+                        </div>
+
+                        <hr>
+
+                        <h2>With Text Area</h2>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Your Message</span>
+                            <textarea class="form-control" row="10" placeholder="Message"></textarea>
+                        </div>
+
+                        <hr>
+
+                        <h2>Flex No Wrap</h2>
+                        <p>flex-nowrap</p>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text">Some message here to display</span>
+                            <input type="text" class="form-control">
+                        </div>
+                        <p>flex-wrap</p>
+                        <div class="input-group flex-wrap">
+                            <span class="input-group-text">Some message here to display</span>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <hr>
+
+                        <h2>Sizing</h2>
+                        <p>Regular</p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">https://</span>
+                            <input type="text" class="form-control" placeholder="URL">
+                        </div>
+
+                        <p>input-group-sm</p>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text">https://</span>
+                            <input type="text" class="form-control" placeholder="URL">
+                        </div>
+
+                        <p>input-group-lg</p>
+                        <div class="input-group input-group-lg mb-3">
+                            <span class="input-group-text">https://</span>
+                            <input type="text" class="form-control" placeholder="URL">
+                        </div>
+
+                        <!-- Left Column Ends -->
+                    </div>
+                    <div class="col-6">
+                        <!-- Right Column Starts -->
+
+                        <h2>Checkbox</h2>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input type="checkbox" class="form-check-input">
+                            </div>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+
+                        <hr>
+
+                        <h2>Radio</h2>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <input type="radio" class="form-check-input">
+                            </div>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+
+                        <hr>
+
+                        <h2>Buttons</h2>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <button type="button" class="btn btn-outline-danger">Submit</button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+
+                        <hr>
+
+                        <h2>Select</h2>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <label for="group1" class="form-label">Options</label>
+                            </div>
+                            <select class="form-select" id="group1">
+                                <option selected>One</option>
+                                <option>Two</option>
+                                <option>Three</option>
+                            </select>
+                        </div>
+
+                        <hr>
+
+                        <h2>Select Multiple</h2>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <label for="group2" class="form-label">Options</label>
+                            </div>
+                            <select class="form-select" id="group2" multiple>
+                                <option selected>One</option>
+                                <option>Two</option>
+                                <option>Three</option>
+                            </select>
+                        </div>
+
+                        <hr>
+
+                        <h2>File</h2>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text">
+                                <label for="group3" class="form-label">File</label>
+                            </div>
+                            <input type="file" id="group3" class="form-control">
+                        </div>
+
+                        <!-- Right Column Ends -->
+                    </div>
+                </div>
+
+
+
+
+                <!-- content end-->
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/basics.js"></script>
+
+    <script>
+        applyFormsNavActiveClass();
+    </script>
+</body>
+
+</html>
