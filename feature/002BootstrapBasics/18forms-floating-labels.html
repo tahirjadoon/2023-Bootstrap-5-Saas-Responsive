@@ -8,19 +8,20 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-    <title>002 Bootstrap Basics - Forms - Select</title>
+    <title>002 Bootstrap Basics - Forms - Floating Labels</title>
 
 </head>
 
 <body>
-    <h1>002 Bootstrap Basics - Forms - Select</h1>
+    <h1>002 Bootstrap Basics - Forms - Floating Labels</h1>
 
     <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
 
 
     <h2>For more info</h2>
     <ul>
-        <li><a href="https://getbootstrap.com/docs/5.1/forms/select/" target="_blank">Forms - Select</a>
+        <li><a href="https://getbootstrap.com/docs/5.1/forms/floating-labels/" target="_blank">Forms - Floating
+                Labels</a>
         </li>
     </ul>
 
@@ -51,63 +52,53 @@
             <div class="col-md-9">
                 <!--Content start -->
 
-                <h2>Select - Default</h2>
-                <select class="form-select">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <div class="form-floating mb-3">
+                    <input type="email" id="floating1" class="form-control" placeholder="">
+                    <label for="floating1">Email</label>
+                </div>
 
-                <hr>
+                <div class="form-floating mb-3">
+                    <input type="password" id="floating2" class="form-control" placeholder="">
+                    <label for="floating2">Password</label>
+                </div>
 
-                <h2>Select - Small</h2>
-                <select class="form-select form-select-sm">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <div class="form-floating mb-3">
+                    <input type="text" id="floating3" class="form-control" placeholder="" value="test">
+                    <label for="floating3">Input with value</label>
+                </div>
 
-                <hr>
+                <p>Do not use rows to set the height of the <code>textarea</code>, use css</p>
+                <div class="form-floating mb-3">
+                    <textarea id="floating4" class="form-control" style="height: 100px;" placeholder=""></textarea>
+                    <label for="floating4">Comment</label>
+                </div>
 
-                <h2>Select - Large</h2>
-                <select class="form-select form-select-lg">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <div class="form-floating mb-3">
+                    <select id="floating5" class="form-select">
+                        <option>One</option>
+                        <option>Two</option>
+                    </select>
+                    <label for="floating5">Options</label>
+                </div>
 
-                <hr>
-
-                <h2>Select - Multiple</h2>
-                <select class="form-select" multiple>
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-
-                <hr>
-
-                <h2>Select - Multiple with Size</h2>
-                <select class="form-select" multiple size="2">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-
-                <hr>
-
-                <h2>Select - Disabled</h2>
-                <select class="form-select" disabled>
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <p>Example with grid</p>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="email" id="floating6" class="form-control" placeholder="">
+                            <label for="floating6">Email</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <select id="floating7" class="form-select">
+                                <option>One</option>
+                                <option>Two</option>
+                            </select>
+                            <label for="floating7">Options</label>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- content end-->
             </div>
