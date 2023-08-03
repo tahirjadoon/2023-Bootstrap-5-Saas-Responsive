@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <title>002 Bootstrap Basics - Forms - Range</title>
+
+</head>
+
+<body>
+    <h1>002 Bootstrap Basics - Forms - Range</h1>
+
+    <p>&#8592; <a href="index.html">Bootstrap Basics Index</a></p>
+
+
+    <h2>For more info</h2>
+    <ul>
+        <li><a href="https://getbootstrap.com/docs/5.1/forms/range/" target="_blank">Forms - Range</a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-3">
+                <ul class="list-group flex-md-column flex-row">
+                    <li class="list-group-item" id="12forms-overview"><a href="12forms-overview.html"
+                            class="d-block text-decoration-none">Forms Overview
+                            worksheet</a></li>
+                    <li class="list-group-item" id="13forms-formcontrol"><a href="13forms-formcontrol.html"
+                            class="d-block text-decoration-none">Forms FormControl
+                            worksheet</a></li>
+                    <li class="list-group-item" id="14forms-select"><a href="14forms-select.html"
+                            class="d-block text-decoration-none">Forms Select
+                            worksheet</a></li>
+                    <li class="list-group-item" id="15forms-checks-radio"><a href="15forms-checks-radio.html"
+                            class="d-block text-decoration-none">Forms CheckBox RadioBox
+                            worksheet</a></li>
+                    <li class="list-group-item" id="16forms-range"><a href="16forms-range.html"
+                            class="d-block text-decoration-none">Forms Range worksheet</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <!--Content start -->
+
+                <h2>Range - Basic</h2>
+                <label for="range1" class="form-label">Range</label>
+                <input type="range" class="form-range" id="range1">
+
+                <hr>
+
+                <h2>Range - Min = 0 and Max = 5</h2>
+                <p>Step here by default is 1. We'll have 5 steps</p>
+                <label for="range2" class="form-label">Range</label>
+                <input type="range" class="form-range" id="range2" min="0" max="5">
+
+                <hr>
+
+                <h2>Range - Min = 0, Max = 5, Step = 0.5</h2>
+                <p>We'll have 10 steps here</p>
+                <label for="range2" class="form-label">Range</label>
+                <input type="range" class="form-range" id="range2" min="0" max="5" step="0.5">
+
+                <!-- content end-->
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/basics.js"></script>
+
+    <script>
+        applyFormsNavActiveClass();
+    </script>
+</body>
+
+</html>
