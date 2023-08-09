@@ -20,3 +20,26 @@ function applySectionNavActiveClass() {
     item.classList.add("list-group-item-warning");
     
 }
+
+function applyFormValidationOnSubmit(formClass) {
+    if (formClass == undefined || formClass == null)
+        return;
+    
+    var forms = document.querySelectorAll(formClass);
+    if (forms == null || forms == undefined || forms.length <= 0) {
+        alert(`No forms available with class ${formClass}`);
+        return;
+    }
+
+    Array.prototype.slice(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+          
+                form.classList.add('was-validated');
+            }, false)
+        });
+}
