@@ -10,7 +10,7 @@ function fetchPageName() {
     return pageName;
 }
 
-function applyFormsNavActiveClass() {
+function applySectionNavActiveClass() {
     var pageName = fetchPageName();
     if (!pageName) return;
 
